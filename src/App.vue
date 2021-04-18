@@ -1,35 +1,17 @@
 <template>
   <div id="app">
-    <router-view/>
-    <TabBar>
-        <TabBaritem path = '/home'>
-          <img slot="item-icon" src="./assets/img/TabBar/tabbardefault.png" alt="">
-          <img slot="item-color" src="./assets/img/TabBar/tabbarcolor.png" alt="">
-        </TabBaritem>
-        <TabBaritem path = '/categary'>
-          <img slot="item-icon" src="./assets/img/TabBar/tabbardefault.png" alt="">
-          <img slot="item-color" src="./assets/img/TabBar/tabbarcolor.png" alt="">
-        </TabBaritem>
-        <TabBaritem path = '/cart'>
-          <img slot="item-icon" src="./assets/img/TabBar/tabbardefault.png" alt="">
-          <img slot="item-color" src="./assets/img/TabBar/tabbarcolor.png" alt="">
-        </TabBaritem>
-        <TabBaritem path = '/profile'>
-          <img slot="item-icon" src="./assets/img/TabBar/tabbardefault.png" alt="">
-          <img slot="item-color" src="./assets/img/TabBar/tabbarcolor.png" alt="">
-        </TabBaritem>
-    </TabBar>
+    <TabBar/>
   </div>
 </template>
 
 <script>
-import TabBar from './components/tabbar/TabBar';
-import TabBaritem from './components/tabbar/TabBaritem'
+
+  // 引入tabbar模块
+import TabBar from './components/content/mainTabBar/MainTabBar';
 export default {
   name: 'App',
   components: {
-   TabBar,
-   TabBaritem
+    TabBar
   }
 }
 </script>
