@@ -26,25 +26,10 @@
 import TabBar from 'components/common/tabbar/TabBar';
 import TabBaritem from 'components/common/tabbar/TabBaritem';
 export default {
-  name: '',
-  data() { 
-    return {
-
-    }
-  },
-  props: {
-
-  },
   components:{
     TabBar,
     TabBaritem
-  },
-  mounted() {
-
-  },
-  methods:{
-
-  },
+  }
  }
 </script>
 

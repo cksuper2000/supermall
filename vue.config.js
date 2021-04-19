@@ -9,5 +9,9 @@ module.exports = {
                 'network': "@/network"
             }
         }
+    },
+    outputDir: '../public',
+    devServer: {
+        proxy: { '/api': { target: 'http://www.caiji.me', changeOrigin: true, ws: true, pathRewrite: { '^/api': '/api', } } }
     }
 }
