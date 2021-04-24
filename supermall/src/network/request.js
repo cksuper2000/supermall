@@ -8,7 +8,6 @@ export function request(config) {
     });
     // axios拦截器请求拦截
     instance.interceptors.request.use(config => {
-        console.log(config);
         return config
     }, err => {
         console.log(err);
